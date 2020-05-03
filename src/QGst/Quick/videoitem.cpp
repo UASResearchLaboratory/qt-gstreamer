@@ -21,6 +21,7 @@
 #include <QtQuick/QSGNode>
 #include <QtQuick/QSGFlatColorMaterial>
 #include "../../QGlib/Signal"
+#include <QtCore/QObject>
 
 namespace QGst {
 namespace Quick {
@@ -110,7 +111,6 @@ QSGNode* VideoItem::updatePaintNode(QSGNode *oldNode, UpdatePaintNodeData *data)
                 "update-node", (void*)oldNode,
                 r.x(), r.y(), r.width(), r.height());
     }
-
     return newNode;
 }
 
